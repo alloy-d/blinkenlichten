@@ -23,9 +23,10 @@ class Lightbringer < Thor
     end
   end
 
-  desc "nop", "do nothing"
+  desc "console", "open a pry console with the port open"
   def nop
     port = init_port(options)
+    binding.pry
   end
 
   private
