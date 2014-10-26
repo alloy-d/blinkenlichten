@@ -24,7 +24,7 @@ class Blinkenlichten < Thor
   end
 
   desc "console", "open a pry console with the port open"
-  def nop
+  def console
     port = init_port(options)
     binding.pry
   end
