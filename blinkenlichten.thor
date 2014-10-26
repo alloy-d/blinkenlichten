@@ -1,7 +1,7 @@
 require 'serialport'
 require 'pry'
 
-class Lightbringer < Thor
+class Blinkenlichten < Thor
   class_option :device, type: :string, default: Dir["/dev/tty.usbmodem*"].first
   class_option :baud, type: :string, default: 9600
 
