@@ -1,13 +1,21 @@
 # So many impressive things to do:
 
+## Compiling the command tool:
+
+```
+go build blinkenlichten.go
+```
+
+Optionally, set `GOOS=linux` and `GOARCH=arm` to compile for the Raspberry Pi.
+
 ## Turn on all the lights:
 
 ```
-$ thor blinkenlichten:on
+$ ./blinkenlichten on
 ```
 
 ## Turn off all the lights:
 
 ```
-$ thor blinkenlichten:off
+$ ./blinkenlichten off
 ```
